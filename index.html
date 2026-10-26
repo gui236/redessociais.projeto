@@ -109,16 +109,28 @@
 
                 <div class="container-card">
                     <div class="box">
+                        <h2>100%</h2>
 
+                        <p>Usam redes sociais</p>
                     </div>
 
                     <div class="box">
-                        
+                        <p>Impactos</p>
+
+                        <h2>82%</h2>
+
+                        <hr class="barra" />
                     </div>
                 </div>
 
+                <p>
+                    Além disso, a pesquisa revela que o uso intenso das redes sociais entre jovens está associado a impactos negativos na saúde e à exposição à desinformação. Ao mostrar que 68% relatam sintomas associados ao uso excessivo e 54% já acreditaram em informações falsas sobre saúde, o estudo contribui para o debate sobre educação digital, consumo consciente e valorização de informações confiáveis e da orientação profissional
+                </p>
             </div>
 
+            <div class="container-link">
+                <a class="link" href="https://take.quiz-maker.com/QZ6DGLKXM">Acesse nosso quiz <i class="bi bi-link-45deg"></i></a>
+            </div>
         </div>
     </main>
 </body>
@@ -260,17 +272,63 @@
             height: 150px;
             background-color: #1c1c1c;
             border-radius: 5px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            /* padding: 12px; */
         }
     }
 
     @media(min-width: 481px) {
         .box {
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            width: 280px;
-            height: 280px;
+            width: 200px;
+            height: 200px;
             background-color: #1c1c1c;
             border-radius: 5px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            /* padding: 30px; */
+            
         }
+    }
+
+    .box h2{
+        font-size: clamp(1.1rem, 2.5vw + 0.9rem, 2.8rem);
+        color: #ff6b35;
+    }
+
+    .box p{
+        font-size: clamp(0.8rem, 2.5vw + 0.2rem, 1.2rem);
+    }
+
+    .barra {
+        border: 0;
+        background: linear-gradient(to right, #ff6b35 82%, #aaaa 82%);
+        width: 80%;
+        margin: 0 auto;
+        height: 5px;
+        border-radius: 30px;
+
+    }
+
+    .container-link{
+        width: 90vw;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 5vh;
+    }
+
+    .link{
+        color: #ff6b35;
+        margin-left: 0;
     }
 
 </style>
